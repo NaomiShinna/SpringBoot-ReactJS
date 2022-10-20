@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "0ba7a8ef-225d-4b09-9714-47870e3c9d65",
+		"name": "Aplikasi Post Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19786109"
+	},
+	"item": [
+		{
+			"name": "getAllArticle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/find/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Dunia Mengalami Resesi di Tahun 2023, Hati-hati\",\r\n    \"content\": \"Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum \",\r\n    \"category\": \"resesi\",\r\n    \"status\":\"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateArticle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"John Wick 4 Akan Segera Tayang Di Bioskop, Nantikan\",\r\n    \"content\": \"Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum Lorem ipsum no lipsum \",\r\n    \"category\": \"john wong jowo\",\r\n    \"status\":\"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteArticle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/article/publish/2/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/publish/2/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"publish",
+						"2",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/article/draft",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article/draft",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"draft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/article/find/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/find/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
